@@ -37,6 +37,4 @@ function generateReviews() {
   return { "data": reviews }
 }
 
-let dataObj = generateReviews();
-
-fs.writeFileSync('reviews.json', JSON.stringify(dataObj, null, '\t'));
+module.exports = generateReviews;

@@ -17,6 +17,4 @@ function generateProducts() {
   return { "data": products }
 }
 
-let dataObj = generateProducts();
-
-fs.writeFileSync('products.json', JSON.stringify(dataObj, null, '\t'));
+module.exports = generateProducts;
