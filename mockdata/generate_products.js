@@ -1,20 +1,17 @@
 const faker = require('faker');
-const fs = require('fs')
 
-function generateProducts() {
+const generateProducts = () => {
+  const products = [];
 
-  let products = []
-
-  for (let id=1; id <= 100; id++) {
-
-    let name = faker.commerce.productName();
+  for (let id = 1; id <= 100; id += 1) {
+    const name = faker.commerce.productName();
 
     products.push({
-        "productId": id,
-        "name": name,
+      productId: id,
+      name,
     });
   }
-  return { "data": products }
-}
+  return { data: products };
+};
 
 module.exports = generateProducts;
