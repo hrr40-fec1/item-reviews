@@ -10,6 +10,7 @@ const ReviewsSchema = mongoose.Schema({
     sizing: { type: Number },
     style: { type: Number },
     value: { type: Number },
+    comfort: { type: Number },
   },
   customerName: { type: String },
   purchaseDate: Date,
