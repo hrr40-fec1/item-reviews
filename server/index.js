@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 require('dotenv').config();
 require('../db/index.js');
 const express = require('express');
@@ -10,8 +14,8 @@ app.get('/', (req, res) => res.send('Hello World!'));
 app.get('/api/product/reviews', (req, res) => {
   const { productId } = req.query;
   Promise.all([Reviews.find({ productId }), Products.find({ productId })])
-    .then((values) => {
-      res.json(values);
+    .then(([reviews, product]) => {
+      res.json([...reviews, ...product]);
     })
     .catch((err) => console.log(err.message));
 });

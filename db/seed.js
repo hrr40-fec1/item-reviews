@@ -15,6 +15,21 @@ const seeds = {
   Products: genProducts(),
 };
 
+
+const dropCollections = () => {
+  db.dropCollection('reviews', (err, result) => {
+    if (err) console.log('err', err.message);
+    if (result) console.log('results', result);
+  });
+  db.dropCollection('products', (err, result) => {
+    if (err) console.log('err', err.message);
+    if (result) console.log('results', result);
+  });
+  db.dropCollection('customers', (err, result) => {
+    if (err) console.log('err', err.message);
+    if (result) console.log('results', result);
+  });
+};
 const insertSeedData = () => {
   Reviews.create(seeds.Reviews.data)
     .then(() => Customers.create(seeds.Customers.data))
@@ -23,5 +38,5 @@ const insertSeedData = () => {
     // eslint-disable-next-line no-console
     .catch((error) => console.log(error));
 };
-
+dropCollections();
 insertSeedData();
