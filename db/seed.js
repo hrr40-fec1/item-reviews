@@ -17,17 +17,11 @@ const seeds = {
 
 
 const dropCollections = () => {
-  db.dropCollection('reviews', (err, result) => {
-    if (err) console.log('err', err.message);
-    if (result) console.log('results', result);
-  });
-  db.dropCollection('products', (err, result) => {
-    if (err) console.log('err', err.message);
-    if (result) console.log('results', result);
-  });
-  db.dropCollection('customers', (err, result) => {
-    if (err) console.log('err', err.message);
-    if (result) console.log('results', result);
+  ['review', 'products', 'customers'].forEach((collection) => {
+    db.dropCollection(collection, (err, result) => {
+      if (err) console.log('error', err.message);
+      if (result) console.log('results', result);
+    });
   });
 };
 const insertSeedData = () => {
