@@ -1,0 +1,304 @@
+{
+	"data": [
+		{
+			"customerId": 43,
+			"productId": 100,
+			"purchased": "2019-08-27T10:37:15.005Z",
+			"name": "Madisen_Hackett"
+		},
+		{
+			"customerId": 9,
+			"productId": 99,
+			"purchased": "2019-08-27T13:57:18.260Z",
+			"name": "Claudie.Cormier"
+		},
+		{
+			"customerId": 39,
+			"productId": 6,
+			"purchased": "2019-08-27T00:35:19.926Z",
+			"name": "Emery.Hudson62"
+		},
+		{
+			"customerId": 25,
+			"productId": 91,
+			"purchased": "2019-08-27T04:10:14.402Z",
+			"name": "Ahmed.Moore5"
+		},
+		{
+			"customerId": 5,
+			"productId": 12,
+			"purchased": "2019-08-27T11:50:07.026Z",
+			"name": "Rubye.Lind99"
+		},
+		{
+			"customerId": 27,
+			"productId": 99,
+			"purchased": "2019-08-27T17:44:51.918Z",
+			"name": "Mazie_Herzog"
+		},
+		{
+			"customerId": 5,
+			"productId": 9,
+			"purchased": "2019-08-27T05:09:44.206Z",
+			"name": "Rebecca_Monahan90"
+		},
+		{
+			"customerId": 12,
+			"productId": 32,
+			"purchased": "2019-08-27T07:44:12.652Z",
+			"name": "Jamison84"
+		},
+		{
+			"customerId": 35,
+			"productId": 50,
+			"purchased": "2019-08-27T16:28:09.745Z",
+			"name": "Gerson76"
+		},
+		{
+			"customerId": 40,
+			"productId": 63,
+			"purchased": "2019-08-27T08:12:06.367Z",
+			"name": "Rebeka_Price19"
+		},
+		{
+			"customerId": 38,
+			"productId": 17,
+			"purchased": "2019-08-27T05:30:12.064Z",
+			"name": "Bonnie.Wiza24"
+		},
+		{
+			"customerId": 8,
+			"productId": 82,
+			"purchased": "2019-08-27T04:47:41.653Z",
+			"name": "Jasmin19"
+		},
+		{
+			"customerId": 15,
+			"productId": 11,
+			"purchased": "2019-08-27T04:32:05.928Z",
+			"name": "Kellie.Murazik9"
+		},
+		{
+			"customerId": 3,
+			"productId": 38,
+			"purchased": "2019-08-27T16:34:05.720Z",
+			"name": "Maya_Herman"
+		},
+		{
+			"customerId": 35,
+			"productId": 5,
+			"purchased": "2019-08-27T06:42:59.377Z",
+			"name": "Brady.Hahn"
+		},
+		{
+			"customerId": 46,
+			"productId": 9,
+			"purchased": "2019-08-27T09:51:54.865Z",
+			"name": "Kristian7"
+		},
+		{
+			"customerId": 17,
+			"productId": 95,
+			"purchased": "2019-08-26T22:59:35.900Z",
+			"name": "Oma_Daugherty"
+		},
+		{
+			"customerId": 6,
+			"productId": 76,
+			"purchased": "2019-08-27T18:28:01.746Z",
+			"name": "Tanner_Ruecker51"
+		},
+		{
+			"customerId": 20,
+			"productId": 38,
+			"purchased": "2019-08-27T19:18:14.870Z",
+			"name": "Pat.Howe"
+		},
+		{
+			"customerId": 18,
+			"productId": 63,
+			"purchased": "2019-08-26T20:06:17.542Z",
+			"name": "Lou11"
+		},
+		{
+			"customerId": 16,
+			"productId": 64,
+			"purchased": "2019-08-26T20:12:01.087Z",
+			"name": "Angie_Maggio"
+		},
+		{
+			"customerId": 32,
+			"productId": 72,
+			"purchased": "2019-08-27T15:14:32.081Z",
+			"name": "Birdie_Goldner44"
+		},
+		{
+			"customerId": 44,
+			"productId": 32,
+			"purchased": "2019-08-27T17:04:44.146Z",
+			"name": "Brionna97"
+		},
+		{
+			"customerId": 48,
+			"productId": 2,
+			"purchased": "2019-08-26T20:31:37.512Z",
+			"name": "Kristin64"
+		},
+		{
+			"customerId": 21,
+			"productId": 20,
+			"purchased": "2019-08-27T11:06:20.545Z",
+			"name": "Titus.Rempel"
+		},
+		{
+			"customerId": 25,
+			"productId": 14,
+			"purchased": "2019-08-27T08:28:25.401Z",
+			"name": "Reginald_Fahey77"
+		},
+		{
+			"customerId": 3,
+			"productId": 59,
+			"purchased": "2019-08-27T10:46:36.767Z",
+			"name": "Oran56"
+		},
+		{
+			"customerId": 29,
+			"productId": 46,
+			"purchased": "2019-08-27T19:19:14.582Z",
+			"name": "Alexanne_Davis72"
+		},
+		{
+			"customerId": 39,
+			"productId": 36,
+			"purchased": "2019-08-27T18:13:04.192Z",
+			"name": "Carey61"
+		},
+		{
+			"customerId": 7,
+			"productId": 12,
+			"purchased": "2019-08-27T08:41:08.596Z",
+			"name": "Germaine92"
+		},
+		{
+			"customerId": 37,
+			"productId": 65,
+			"purchased": "2019-08-26T21:18:56.627Z",
+			"name": "Bennie70"
+		},
+		{
+			"customerId": 20,
+			"productId": 65,
+			"purchased": "2019-08-27T02:53:25.922Z",
+			"name": "Hyman.Torp43"
+		},
+		{
+			"customerId": 11,
+			"productId": 45,
+			"purchased": "2019-08-27T07:43:26.160Z",
+			"name": "Royal.Gaylord87"
+		},
+		{
+			"customerId": 37,
+			"productId": 7,
+			"purchased": "2019-08-27T15:00:26.005Z",
+			"name": "Dangelo.Beatty"
+		},
+		{
+			"customerId": 24,
+			"productId": 14,
+			"purchased": "2019-08-26T22:18:48.735Z",
+			"name": "Jacquelyn_Konopelski4"
+		},
+		{
+			"customerId": 10,
+			"productId": 11,
+			"purchased": "2019-08-26T21:41:37.909Z",
+			"name": "Alexys69"
+		},
+		{
+			"customerId": 28,
+			"productId": 68,
+			"purchased": "2019-08-27T09:41:53.372Z",
+			"name": "Tabitha24"
+		},
+		{
+			"customerId": 39,
+			"productId": 77,
+			"purchased": "2019-08-27T04:50:31.941Z",
+			"name": "Wilbert.Barrows69"
+		},
+		{
+			"customerId": 43,
+			"productId": 85,
+			"purchased": "2019-08-27T00:18:32.449Z",
+			"name": "Kassandra_Davis"
+		},
+		{
+			"customerId": 14,
+			"productId": 55,
+			"purchased": "2019-08-27T02:54:50.301Z",
+			"name": "Patsy.Stroman38"
+		},
+		{
+			"customerId": 2,
+			"productId": 33,
+			"purchased": "2019-08-27T14:52:41.738Z",
+			"name": "Murray_Hills36"
+		},
+		{
+			"customerId": 10,
+			"productId": 24,
+			"purchased": "2019-08-27T12:31:58.493Z",
+			"name": "Erika66"
+		},
+		{
+			"customerId": 5,
+			"productId": 4,
+			"purchased": "2019-08-27T11:36:32.605Z",
+			"name": "Viviane_Mayer94"
+		},
+		{
+			"customerId": 5,
+			"productId": 77,
+			"purchased": "2019-08-27T11:01:21.376Z",
+			"name": "Maddison56"
+		},
+		{
+			"customerId": 5,
+			"productId": 39,
+			"purchased": "2019-08-27T19:07:41.102Z",
+			"name": "Jayne32"
+		},
+		{
+			"customerId": 5,
+			"productId": 45,
+			"purchased": "2019-08-27T02:57:14.138Z",
+			"name": "Anna.Jones"
+		},
+		{
+			"customerId": 45,
+			"productId": 34,
+			"purchased": "2019-08-27T01:06:55.940Z",
+			"name": "Chanel_Bode"
+		},
+		{
+			"customerId": 14,
+			"productId": 95,
+			"purchased": "2019-08-27T08:04:25.340Z",
+			"name": "Marco55"
+		},
+		{
+			"customerId": 36,
+			"productId": 56,
+			"purchased": "2019-08-26T22:17:11.046Z",
+			"name": "Emerald30"
+		},
+		{
+			"customerId": 48,
+			"productId": 24,
+			"purchased": "2019-08-27T12:48:26.742Z",
+			"name": "Tara_Jacobi3"
+		}
+	]
+}
