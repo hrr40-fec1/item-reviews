@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 require('dotenv').config();
 require('../db/index.js');
 const express = require('express');
