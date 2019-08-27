@@ -19,7 +19,8 @@
   "scripts": {
     "test": "jest",
     "seed": "node db/seed.js",
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "mockdata": "node mockdata/index.js"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
