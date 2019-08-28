@@ -1,40 +1,41 @@
 const faker = require('faker');
-const fs = require('fs')
 
-function generateReviews() {
+const generateReviews = () => {
+  const reviews = [];
 
-  let reviews = []
-
-  for (let id = 1; id <= 400; id++) {
-
-    let title = faker.commerce.productName();
-    let review = faker.lorem.paragraph();
-    let rating = faker.random.number({ min: 1, max: 5 });
-    let quality = faker.random.number({ min: 1, max: 5 });
-    let sizing = faker.random.number({ min: 1, max: 5 });
-    let style = faker.random.number({ min: 1, max: 5 });
-    let value = faker.random.number({ min: 1, max: 5 });
-    let customerid = faker.random.number({ min: 1, max: 50 });
-    let productid = faker.random.number({ min: 1, max: 100 });
-    let helpful = faker.random.boolean();
-    let recommend = faker.random.boolean();
-
+  for (let id = 1; id <= 400; id += 1) {
+    const title = faker.commerce.productName();
+    const review = faker.lorem.paragraph();
+    const quality = faker.random.number({ min: 1, max: 5 });
+    const sizing = faker.random.number({ min: 1, max: 5 });
+    const style = faker.random.number({ min: 1, max: 5 });
+    const value = faker.random.number({ min: 1, max: 5 });
+    const comfort = faker.random.number({ min: 1, max: 5 });
+    const customerName = faker.internet.userName();
+    const purchaseDate = faker.date.recent();
+    const productId = faker.random.number({ min: 1, max: 100 });
+    const helpful = faker.random.boolean();
+    const recommend = faker.random.boolean();
+    const ratings = {
+      quality,
+      sizing,
+      style,
+      value,
+      comfort,
+    };
 
     reviews.push({
-      "title": title,
-      "review": review,
-      "rating": rating,
-      "quality": quality,
-      "sizing": sizing,
-      "style": style,
-      "value": value,
-      "customerId": customerid,
-      "productId": productid,
-      "helpful": helpful,
-      "recommend": recommend
+      title,
+      review,
+      ratings,
+      customerName,
+      purchaseDate,
+      productId,
+      helpful,
+      recommend,
     });
   }
-  return { "data": reviews }
-}
+  return { data: reviews };
+};
 
 module.exports = generateReviews;

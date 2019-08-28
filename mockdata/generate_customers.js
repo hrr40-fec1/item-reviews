@@ -1,28 +1,22 @@
 const faker = require('faker');
-const fs = require('fs')
 
-function generateCustomers() {
+const generateCustomers = () => {
+  const customers = [];
 
-  let customers = []
-
-  for (let id = 1; id <= 50; id++) {
-    let customerid = faker.random.number({ min: 1, max: 50 });
-    let productid = faker.random.number({ min: 1, max: 100 });
-    let purchased = faker.date.recent();
-    let name = faker.internet.userName();
+  for (let id = 1; id <= 50; id += 1) {
+    const customerid = faker.random.number({ min: 1, max: 50 });
+    const productid = faker.random.number({ min: 1, max: 100 });
+    const purchased = faker.date.recent();
+    const name = faker.internet.userName();
 
     customers.push({
-      "customerId" : customerid,
-      "productId": productid,
-      "purchased": purchased,
-      "name": name,
+      customerId: customerid,
+      productId: productid,
+      purchased,
+      name,
     });
   }
-  return { "data": customers }
-}
-
-// let dataObj = generateCustomers();
-
-// fs.writeFileSync('customers.json', JSON.stringify(dataObj, null, '\t'));
+  return { data: customers };
+};
 
 module.exports = generateCustomers;
