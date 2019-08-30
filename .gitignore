@@ -3,3 +3,7 @@ test.js
 examples
 .DS_Store
 .vscode
+client/dist/bundle.js
+.env
+coverage/
+
