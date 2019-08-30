@@ -8,6 +8,6 @@ const customerData = genCustomers();
 const reviewData = genReviews();
 const productData = genProducts();
 
-fs.writeFileSync('./tests/data/customers.json', JSON.stringify(customerData, null, '\t'));
-fs.writeFileSync('./tests/data/reviews.json', JSON.stringify(reviewData, null, '\t'));
-fs.writeFileSync('./tests/data/products.json', JSON.stringify(productData, null, '\t'));
+fs.writeFileSync('customers.json', JSON.stringify(customerData, null, '\t'));
+fs.writeFileSync('reviews.json', JSON.stringify(reviewData, null, '\t'));
+fs.writeFileSync('products.json', JSON.stringify(productData, null, '\t'));
