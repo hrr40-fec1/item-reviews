@@ -5,6 +5,9 @@ const Reviews = require('../models/Reviews');
 const Products = require('../models/Products');
 
 const app = express();
+
+app.use(express.static(__dirname + '/../client/dist'));
+
 app.get('/', (req, res) => res.send('Hello World!'));
 
 app.get('/api/product/reviews', (req, res) => {
