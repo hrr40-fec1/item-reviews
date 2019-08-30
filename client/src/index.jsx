@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import Add from './components/Add';
 
-const Welcome = () => <h1>Hello </h1>;
+// eslint-disable-next-line react/prefer-stateless-function
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <Add />
+        </header>
+      </div>
+    );
+  }
+}
 
 // eslint-disable-next-line no-undef
-ReactDOM.render(<Welcome />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
