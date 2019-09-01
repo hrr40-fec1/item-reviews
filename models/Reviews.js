@@ -6,6 +6,7 @@ const ReviewsSchema = mongoose.Schema({
   title: String,
   review: String,
   ratings: {
+    overall: { type: Number },
     quality: { type: Number },
     sizing: { type: Number },
     style: { type: Number },
