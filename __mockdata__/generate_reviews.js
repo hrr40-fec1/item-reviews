@@ -16,10 +16,10 @@ const generateReviews = () => {
     const productId = faker.random.number({ min: 1, max: 100 });
     const helpful = faker.random.boolean();
     const recommend = faker.random.boolean();
-    const overallRating = faker.random.number({ min: 1, max: 5 });
+    const overall = faker.random.number({ min: 1, max: 5 });
 
     const ratings = {
-      overallRating,
+      overall,
       quality,
       sizing,
       style,
