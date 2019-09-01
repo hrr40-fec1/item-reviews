@@ -1,9 +1,19 @@
 // renders review title, text, ratings, reviewer name, date review is posted
 // should be have button to mark helpful
-import App from '../client/src/components/App';
+import Reviews from '../client/src/components/Reviews';
 
-describe('App', () => {
+const wrapper = shallow(<Reviews />);
+
+describe('<Reviews /> rendering', () => {
   test('it properly renders', () => {
-    shallow(<App />);
+    expect(wrapper.find('h3')).toHaveLength(1);
   });
+});
+
+describe('<Reviews /> interactions', () => { });
+
+describe('<Reviews /> lifecycle method invocations', () => {
+  // it('should change the state componentState componentDidMount method is invoked', () => {
+  //   expect(wrapper.state('componentState')).toEqual('mounted');
+  // });
 });

@@ -5,9 +5,9 @@ const Reviews = require('../models/Reviews');
 const Customers = require('../models/Customers');
 const Products = require('../models/Products');
 
-const genReviews = require('../mockdata/generate_reviews');
-const genProducts = require('../mockdata/generate_products');
-const genCustomers = require('../mockdata/generate_customers');
+const genReviews = require('../__mockdata__/generate_reviews');
+const genProducts = require('../__mockdata__/generate_products');
+const genCustomers = require('../__mockdata__/generate_customers');
 
 const seeds = {
   Reviews: genReviews(),

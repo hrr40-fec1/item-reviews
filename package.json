@@ -17,9 +17,9 @@
   },
   "homepage": "https://github.com/hrr40-fec1/item-reviews",
   "scripts": {
-    "test": "jest",
+    "test": "jest --watch",
     "db:seed": "node db/seed.js",
-    "start": "nodemon server/index.js",
+    "start": "nodemon server/server.js",
     "test:data": "node ./__mockdata__/index.js",
     "react-dev": "webpack -d --watch"
   },
@@ -53,7 +53,7 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^24.9.0",
     "jest-config": "^24.9.0",
-    "puppeteer": "^1.19.0",
+    "supertest": "^4.0.2",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   }

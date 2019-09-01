@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-const HOST = process.env.DB_HOST;
+const { DB_HOST } = process.env;
 
-const mongoUri = `mongodb://${HOST}:27017/reviews`;
+const mongoUri = `mongodb://${DB_HOST}:27017/reviews`;
 
 mongoose.connect(mongoUri, { useNewUrlParser: true, useCreateIndex: true });
 
