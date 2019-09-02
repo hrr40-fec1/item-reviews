@@ -2,17 +2,10 @@ require('dotenv').config();
 const db = require('./index.js');
 
 const Reviews = require('../models/Reviews');
-const Customers = require('../models/Customers');
-const Products = require('../models/Products');
+const genReviews = require('./faker/generate_reviews');
 
-const genReviews = require('../__mockdata__/generate_reviews');
-const genProducts = require('../__mockdata__/generate_products');
-const genCustomers = require('../__mockdata__/generate_customers');
-
-const seeds = {
-  Reviews: genReviews(),
-  Customers: genCustomers(),
-  Products: genProducts(),
+const seed = {
+  reviews: genReviews(),
 };
 
 
@@ -25,11 +18,8 @@ const dropCollections = () => {
   });
 };
 const insertSeedData = () => {
-  Reviews.create(seeds.Reviews.data)
-    .then(() => Customers.create(seeds.Customers.data))
-    .then(() => Products.create(seeds.Products.data))
+  Reviews.create(seed.reviews.data)
     .then(() => db.close())
-    // eslint-disable-next-line no-console
     .catch((error) => console.log(error));
 };
 dropCollections();

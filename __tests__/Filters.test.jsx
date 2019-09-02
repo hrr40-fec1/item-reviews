@@ -4,12 +4,8 @@ import Filters from '../client/src/components/Filters';
 
 const wrapper = shallow(<Filters />);
 
-describe('<Filters /> rendering', () => {
+xdescribe('<Filters /> rendering', () => {
   test('it properly renders', () => {
     expect(wrapper.find('h3')).toHaveLength(1);
   });
 });
-
-describe('<Filters /> interactions', () => {});
-
-describe('<Filters /> lifecycle method invocations', () => {});
