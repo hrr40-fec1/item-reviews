@@ -1,7 +1,10 @@
 import React from 'react';
 
 const Filters = () => (
-  <h3> Filters</h3>
+  <div>
+    <h3> Filters</h3>
+  </div>
+
 );
 
 export default Filters;

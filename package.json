@@ -17,10 +17,12 @@
   },
   "homepage": "https://github.com/hrr40-fec1/item-reviews",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "test:data": "node db/faker/index.js",
     "db:seed": "node db/seed.js",
     "start": "nodemon server/server.js",
-    "test:data": "node ./__mockdata__/index.js",
     "react-dev": "webpack -d --watch"
   },
   "dependencies": {
@@ -31,6 +33,7 @@
     "moment": "^2.24.0",
     "mongoose": "^5.6.10",
     "path": "^0.12.7",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
