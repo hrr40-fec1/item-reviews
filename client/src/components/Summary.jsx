@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
+/* eslint react/prop-types: 0 */
 import PropTypes from 'prop-types';
 
 const Summary = ({ summary }) => (
@@ -36,8 +37,8 @@ const Summary = ({ summary }) => (
 );
 Summary.propTypes = {
   summary: PropTypes.shape({
-    reviews: PropTypes.number,
-    recommends: PropTypes.number,
+    reviews: PropTypes.string,
+    recommends: PropTypes.string,
     overall: PropTypes.string,
     quality: PropTypes.string,
     sizing: PropTypes.string,

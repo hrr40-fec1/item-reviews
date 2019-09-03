@@ -14,9 +14,6 @@ describe('<App /> rendering', () => {
 
 describe('<App /> lifecycle method ', () => {
   beforeEach(() => {
-    // Before each test we want to reset the state of the mocked component, so each test can
-    // mock the component in the way it needs to be mocked. Should you have any default mock
-    // needed that is required for every test, this is the place to do this.
     Controller.default.mockClear();
   });
   it('Should show the data, When retrieved', async (done) => {

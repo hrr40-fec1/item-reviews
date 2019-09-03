@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-one-expression-per-line */
 /* eslint-disable no-underscore-dangle */
+/* eslint react/prop-types: 0 */
 import React from 'react';
 import PropTypes from 'prop-types';
 
