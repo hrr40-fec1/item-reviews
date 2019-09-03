@@ -20,7 +20,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "test:data": "node db/faker/index.js",
+    "test:mocks": "node db/faker/index.js",
     "db:seed": "node db/seed.js",
     "start": "nodemon server/server.js",
     "react-dev": "webpack -d --watch"

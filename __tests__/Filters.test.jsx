@@ -4,7 +4,7 @@ import Filters from '../client/src/components/Filters';
 
 describe('<Filters /> rendering', () => {
   const wrapper = shallow(<Filters />);
-  test('it properly renders', () => {
+  test('Filter exists', () => {
     expect(wrapper.exists()).toBe(true);
   });
 });

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 
 import Summary from './Summary';
@@ -14,29 +15,36 @@ class App extends React.Component {
       reviews: [],
       summary: {},
     };
+    this.getReviews.bind(this);
   }
 
-  async componentDidMount() {
-    const response = await GetReviews('10');
-    if (response !== undefined) {
-      const { reviews, summary } = response.data;
-      console.log('reviews', reviews, 'summarys:', summary);
-      this.setState({
-        loading: false,
-        reviews,
-        summary,
-      });
-    }
+  componentDidMount() {
+    this.getReviews(10);
+  }
+
+  async getReviews(id) {
+    try {
+      const response = await GetReviews(id);
+      if (response !== undefined) {
+        const { reviews, summary } = response.data;
+        console.log('reviews', reviews, 'summary:', summary);
+        this.setState({
+          loading: false,
+          reviews,
+          summary,
+        });
+      }
+    } catch (err) { console.log('ERROR: ', err); }
   }
 
   render() {
     const { loading, reviews, summary } = this.state;
-    if (loading) return <div>Data not available</div>;
+    if (loading) return <div>Loading...</div>;
     return (
       <div className="app">
         <h1> Target Reviews </h1>
         <Summary summary={summary} />
-        <Filters reviews={reviews} />
+        <Filters />
         <Reviews reviews={reviews} />
       </div>
     );

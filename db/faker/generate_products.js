@@ -1,9 +1,9 @@
 const faker = require('faker');
 
-const generateProducts = () => {
+const generateProducts = (count) => {
   const products = [];
 
-  for (let id = 1; id <= 100; id += 1) {
+  for (let id = 1; id <= count; id += 1) {
     const name = faker.commerce.productName();
 
     products.push({

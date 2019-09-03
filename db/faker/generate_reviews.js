@@ -1,9 +1,9 @@
 const faker = require('faker');
 
-const generateReviews = () => {
+const generateReviews = (count) => {
   const reviews = [];
 
-  for (let id = 1; id <= 400; id += 1) {
+  for (let id = 1; id <= count; id += 1) {
     const title = faker.commerce.productName();
     const review = faker.lorem.paragraph();
     const quality = faker.random.number({ min: 1, max: 5 });

@@ -6,7 +6,7 @@ import Summary from '../client/src/components/Summary';
 
 describe('<Summary /> rendering', () => {
   const wrapper = shallow(<Summary />);
-  test('it should render a title', () => {
+  test(' Summary exists', () => {
     expect(wrapper.exists()).toBe(true);
   });
 });

@@ -35,9 +35,9 @@ const Summary = ({ summary }) => (
   </div>
 );
 Summary.propTypes = {
-  summary: PropTypes.objectOf({
+  summary: PropTypes.shape({
     reviews: PropTypes.number,
-    recommend: PropTypes.number,
+    recommends: PropTypes.number,
     overall: PropTypes.string,
     quality: PropTypes.string,
     sizing: PropTypes.string,

@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 require('dotenv').config();
 const db = require('./index.js');
 
@@ -5,9 +6,8 @@ const Reviews = require('../models/Reviews');
 const genReviews = require('./faker/generate_reviews');
 
 const seed = {
-  reviews: genReviews(),
+  reviews: genReviews(400),
 };
-
 
 const dropCollections = () => {
   ['review', 'products', 'customers'].forEach((collection) => {
@@ -22,5 +22,6 @@ const insertSeedData = () => {
     .then(() => db.close())
     .catch((error) => console.log(error));
 };
+
 dropCollections();
 insertSeedData();
