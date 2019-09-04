@@ -37,8 +37,8 @@ const Summary = ({ summary }) => (
 );
 Summary.propTypes = {
   summary: PropTypes.shape({
-    reviews: PropTypes.string,
-    recommends: PropTypes.string,
+    reviews: PropTypes.number,
+    recommends: PropTypes.number,
     overall: PropTypes.string,
     quality: PropTypes.string,
     sizing: PropTypes.string,
