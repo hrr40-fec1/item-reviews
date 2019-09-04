@@ -1,3 +1,25 @@
+#HRR40-FEC1 Target based item detail -Review Section
+* clone repo
+* run npm install
+* install mongodb and start the db
+* set up env variables
+* review package.json for npm scripts
+*   for dev mode -
+    *   seed the db
+    *   start webpack
+    *   start express
+    ```
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage",
+    "test:mocks": "node db/faker/index.js",
+    "db:seed": "node db/seed.js",
+    "start": "nodemon server/server.js",
+    "react-dev": "webpack -d --watch"
+    ```
+
+
+
 # FEC Project Specifications
 
 ## Project Selection
