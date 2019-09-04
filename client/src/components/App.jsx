@@ -33,7 +33,6 @@ class App extends React.Component {
           reviews,
           summary,
         });
-        console.log('state', this.state);
       }
     } catch (err) { this.setState({ error: true }); }
   }
@@ -46,7 +45,7 @@ class App extends React.Component {
     if (error) return <div>Error...</div>;
     return (
       <div className="app">
-        <h1> Target Reviews </h1>
+        <h1> Bullseye Reviews </h1>
         <Summary summary={summary} />
         <Filters />
         <Reviews reviews={reviews} />
