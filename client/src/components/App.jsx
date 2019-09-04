@@ -14,6 +14,7 @@ class App extends React.Component {
       loading: true,
       reviews: [],
       summary: {},
+      error: false,
     };
     this.getReviews.bind(this);
   }
@@ -27,19 +28,22 @@ class App extends React.Component {
       const response = await GetReviews(id);
       if (response !== undefined) {
         const { reviews, summary } = response.data;
-        console.log('reviews', reviews, 'summary:', summary);
         this.setState({
           loading: false,
           reviews,
           summary,
         });
+        console.log('state', this.state);
       }
-    } catch (err) { console.log('ERROR: ', err); }
+    } catch (err) { this.setState({ error: true }); }
   }
 
   render() {
-    const { loading, reviews, summary } = this.state;
+    const {
+      loading, reviews, summary, error,
+    } = this.state;
     if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error...</div>;
     return (
       <div className="app">
         <h1> Target Reviews </h1>
