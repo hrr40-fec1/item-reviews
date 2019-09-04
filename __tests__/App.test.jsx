@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable no-undef */
 import * as Controller from '../client/src/controllers/index';
@@ -12,7 +13,7 @@ describe('<App /> rendering', () => {
   });
 });
 
-describe('<App /> lifecycle method ', () => {
+describe('<App /> setstate test ', () => {
   beforeEach(() => {
     Controller.default.mockClear();
   });
@@ -54,15 +55,18 @@ describe('<App /> lifecycle method ', () => {
         summary: mokSummary,
       },
     };
-    Controller.default.mockResolvedValue(response);
     const wrapper = shallow(<App />, { disableLifecycleMethods: true });
+    Controller.default.mockResolvedValue(response);
     const componentInstance = wrapper.instance();
 
     expect(Controller.default.mock.calls.length).toBe(0);
-    await componentInstance.componentDidMount();
+    componentInstance.componentDidMount();
+    await wrapper.instance().getReviews;
     expect(Controller.default.mock.calls.length).toBe(1);
-
-    done();
+    setTimeout(() => {
+      console.log('wrapper state loading', wrapper.state('loading'));
+      done();
+    }, 500);
   });
 
   it('Should show not available, When data has not been retrieved', async (done) => {
