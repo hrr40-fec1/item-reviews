@@ -48,17 +48,20 @@ describe('<App /> lifecycle method ', () => {
       recommends: 6,
       reviews: 7,
     };
-    Controller.default.mockResolvedValue({
-      reviews: mokReviews,
-      summary: mokSummary,
-    });
+    const response = {
+      data: {
+        reviews: mokReviews,
+        summary: mokSummary,
+      },
+    };
+    Controller.default.mockResolvedValue(response);
     const wrapper = shallow(<App />, { disableLifecycleMethods: true });
-    // wrapper.instance().componentDidMount();
     const componentInstance = wrapper.instance();
-    // Accessing react lifecyle methods
+
     expect(Controller.default.mock.calls.length).toBe(0);
     await componentInstance.componentDidMount();
     expect(Controller.default.mock.calls.length).toBe(1);
+
     done();
   });
 
