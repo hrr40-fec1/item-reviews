@@ -14,7 +14,6 @@ class App extends React.Component {
       loading: true,
       reviews: [],
       summary: {},
-      error: false,
     };
     this.getReviews.bind(this);
   }
