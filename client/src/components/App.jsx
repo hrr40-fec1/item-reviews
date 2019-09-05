@@ -20,12 +20,12 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getReviews(10);
+    this.getReviews();
   }
 
-  async getReviews(id) {
+  async getReviews() {
     try {
-      const response = await GetReviews(id);
+      const response = await GetReviews();
       if (response !== undefined) {
         const { reviews, summary } = response.data;
         this.setState({
@@ -34,15 +34,14 @@ class App extends React.Component {
           summary,
         });
       }
-    } catch (err) { this.setState({ error: true }); }
+    } catch (err) { console.log('error', err); }
   }
 
   render() {
     const {
-      loading, reviews, summary, error,
+      loading, reviews, summary,
     } = this.state;
     if (loading) return <div>Loading...</div>;
-    if (error) return <div>Error...</div>;
     return (
       <div className="app">
         <h1> Bullseye Reviews </h1>
