@@ -26,9 +26,21 @@ const getSummary = (reviews) => {
   Object.assign(summary, { recommends: totalRecommends.length, reviews: reviews.length });
   return summary;
 };
-
+const getProductId = (request) => {
+  let { productId } = request.query;
+  if (productId === undefined) {
+    const id = request.headers.referer.split('?productId=')[1];
+    if (id === undefined) {
+      productId = 1;
+    } else {
+      productId = id;
+    }
+  }
+  return productId;
+};
 const getReviews = (req, res) => {
-  const { productId } = req.params;
+  const productId = getProductId(req);
+  console.log('productid', productId);
   Reviews.find({ productId })
     .then((reviews) => {
       const results = {};
