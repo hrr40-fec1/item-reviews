@@ -5,17 +5,18 @@
 * set up env variables
 * review package.json for npm scripts
 *   for dev mode -
-    *   seed the db
-    *   start webpack
+    *   seed the db -> npm run seed
+    *   start webpack -> npm run react-dev
     *   start express
     ```
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
     "test:mocks": "node db/faker/index.js",
-    "db:seed": "node db/seed.js",
+    "seed": "node db/seed.js",
     "start": "nodemon server/server.js",
     "react-dev": "webpack -d --watch"
+    "build": "webpack"
     ```
 
 
