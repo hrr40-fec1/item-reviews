@@ -16,7 +16,7 @@ jobs:
           paths:
             - node_modules
       - run:
-          name: db:seed
+          name: seed
           command: npm run db:seed
       - run:
           name: test
