@@ -27,7 +27,6 @@ const getSummary = (reviews) => {
   return summary;
 };
 const getProductId = (request) => {
-  console.log('request', request);
   let { productId } = request.query;
   if (productId === undefined) {
     const id = request.headers.referer.split('?productId=')[1];

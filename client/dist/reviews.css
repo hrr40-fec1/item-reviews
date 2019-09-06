@@ -11,6 +11,7 @@ div.reviews .summary .title {
   font-size: 24px;
   display: flex;
   justify-content: center;
+  padding-bottoM: 15px;
 }
 div.reviews .summary .overall,
 div.reviews .summary .recommend {
