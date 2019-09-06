@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 
 const Review = ({ review = {} }) => (
-  <li className="feed-list-item">
+  <li className="card">
     <div>{review.title}</div>
     <div>{review.customerName}</div>
     <div>{review.purchaseDate}</div>
@@ -17,7 +17,7 @@ const Review = ({ review = {} }) => (
 const Reviews = ({ reviews = [] }) => {
   const reviewsList = reviews.map((review) => <Review review={review} key={review._id} />);
   return (
-    <div className="feed">
+    <div className="cards">
       <h3>Reviews</h3>
       <ul>
         {reviewsList}
