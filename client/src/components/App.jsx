@@ -42,8 +42,7 @@ class App extends React.Component {
     } = this.state;
     if (loading) return <div>Loading...</div>;
     return (
-      <div className="app">
-        <h1> Bullseye Reviews </h1>
+      <div className="reviews">
         <Summary summary={summary} />
         <Filters />
         <Reviews reviews={reviews} />

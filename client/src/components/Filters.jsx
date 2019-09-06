@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Filters = () => (
-  <div>
+  <div className="filters">
     <h3> Filters</h3>
   </div>
 

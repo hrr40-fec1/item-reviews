@@ -1,6 +1,57 @@
 
-#Reviews {
-  font: 14px "Century Gothic", Futura, sans-serif;
-  margin: 20px;
-  background-color:#e7ebdd;
+div.reviews {
+  font: 16px Targetica, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div.reviews .summary .topsection {
+  display: flex;
+  justify-content: center;
+}
+div.reviews .summary .title {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+div.reviews .summary .overall,
+div.reviews .summary .recommend {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+}
+
+div.reviews .summary .ratingsbar {
+  display: flex;
+  flex-direction: row;
+  padding: 8px 0;
+  justify-content: space-around
+}
+div.reviews .summary .chart {
+  width: 40px;
+  height: 40px;
+  padding: 0 5px;
+}
+
+div.reviews .summary .ranking {
+  font-size: 30px;
+}
+div.reviews .summary .ratingsbar .chartSections {
+  display: flex;
+  flex-direction: row;
+}
+div.reviews .summary .ratingsbar .chartSections .text {
+  width: 50px;
+  font-size: 12px;
+  padding: 5px 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+.react-rater-star.is-active {
+  color: #fc6;
+}
+
+.react-rater-star.is-active-half:before {
+  color: #fc6;
 }
